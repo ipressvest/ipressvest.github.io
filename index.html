@@ -1,4 +1,117 @@
-<!-- Contact & Footer -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ipressvest - Contact & Footer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+        }
+
+        section.wrapper {
+            padding: 4em 2em;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header.style1 {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        header.style1 h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        form {
+            background-color: #1e1e2f;
+            padding: 2em;
+            border-radius: 12px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            padding: 0.7em 2em;
+            cursor: pointer;
+            background-color: #00bcd4;
+            color: #fff;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #0097a7;
+        }
+
+        .feature-list {
+            margin-top: 2em;
+        }
+
+        .feature-list section {
+            margin-bottom: 1.5em;
+        }
+
+        h3.icon {
+            font-size: 1.1em;
+            margin-bottom: 0.5em;
+            color: #00bcd4;
+        }
+
+        a {
+            color: #00e5ff;
+            text-decoration: none;
+        }
+
+        #copyright {
+            margin-top: 3em;
+            text-align: center;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+
+        .col-6 {
+            flex: 1 1 45%;
+        }
+
+        @media (max-width: 768px) {
+            .col-6 {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
 <section id="footer" class="wrapper">
     <div class="title">Stay Connected</div>
     <div class="container">
@@ -8,38 +121,24 @@
         </header>
 
         <div class="row">
-            <!-- Contact Form (Formspree Integrated) -->
-            <div class="col-6 col-12-medium">
+            <div class="col-6">
                 <section>
                     <form action="https://formspree.io/f/manegvrd" method="POST">
-                        <div class="row gtr-50">
-                            <div class="col-6 col-12-small">
-                                <input type="text" name="name" id="contact-name" placeholder="Name" required />
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="email" name="email" id="contact-email" placeholder="Email" required />
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" id="contact-message" placeholder="Your Message" rows="4" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" class="style1" value="Send Message" /></li>
-                                    <li><input type="reset" class="style2" value="Clear" /></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <input type="submit" value="Send Message" />
+                        <input type="reset" value="Clear" />
                     </form>
                 </section>
             </div>
 
-            <!-- Contact Info -->
-            <div class="col-6 col-12-medium">
-                <section class="feature-list small">
+            <div class="col-6">
+                <section class="feature-list">
                     <div class="row">
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <section>
-                                <h3 class="icon solid fa-home">Head Office</h3>
+                                <h3 class="icon">Head Office</h3>
                                 <p>
                                     ipressvest Ltd.<br />
                                     Blockchain Valley<br />
@@ -47,21 +146,21 @@
                                 </p>
                             </section>
                         </div>
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <section>
-                                <h3 class="icon brands fa-telegram">Telegram</h3>
+                                <h3 class="icon">Telegram</h3>
                                 <p><a href="#">@ipressvest_channel</a></p>
                             </section>
                         </div>
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <section>
-                                <h3 class="icon solid fa-envelope">Support</h3>
+                                <h3 class="icon">Support</h3>
                                 <p><a href="mailto:support@ipressvest.com">support@ipressvest.com</a></p>
                             </section>
                         </div>
-                        <div class="col-6 col-12-small">
+                        <div class="col-6">
                             <section>
-                                <h3 class="icon brands fa-discord">Discord</h3>
+                                <h3 class="icon">Discord</h3>
                                 <p><a href="#">discord.gg/ipressvest</a></p>
                             </section>
                         </div>
@@ -70,7 +169,6 @@
             </div>
         </div>
 
-        <!-- Copyright -->
         <div id="copyright">
             <ul>
                 <li>&copy; 2025 ipressvest. All rights reserved.</li>
@@ -79,3 +177,5 @@
         </div>
     </div>
 </section>
+</body>
+</html>
